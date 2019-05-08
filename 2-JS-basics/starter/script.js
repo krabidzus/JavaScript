@@ -47,6 +47,8 @@ alert(firstName + ' is a ' + age + ' year old' + job + '. Is he married? ' + isM
 var lastName = prompt('What is his last Name?');
 console.log(firstName + ' ' + lastName)
 
+//zkouska gitu
+
 
 
 

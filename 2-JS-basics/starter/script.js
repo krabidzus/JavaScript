@@ -26,6 +26,7 @@ var johnMark = 'John and Mark';
  * Variable mutation and type coercion
  */
 
+ /*
 var firstName = 'John';
 var age = 28;
 
@@ -48,16 +49,42 @@ var lastName = prompt('What is his last Name?');
 console.log(firstName + ' ' + lastName)
 
 //zkouska gitu
+*/
 
 
 
+/***************************
+ * Basic operators
+ 
+
+ var year, yearJohn, yearMark;
+year = 2020;
+ageJohn = 28;
+ageMark = 33;
 
 
+// Math operators
+yearJohn = year - ageJohn;
+yearMark = year - ageMark;
 
+console.log(yearJohn);
 
+console.log(year + 2);
+console.log(year * 2);
+console.log(year / 2);
 
+// Logical operators
+var johnOlder = ageJohn < ageMark;
+console.log(johnOlder);
 
+// typeof operator
+console.log(typeof johnOlder);
+console.log(typeof ageJohn);
+console.log(typeof 'Mark is kokot')
+var x;
+console.log(typeof x);
 
+*/
 
 
 

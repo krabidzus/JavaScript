@@ -319,8 +319,8 @@ switch (true){
 }
 */
 
-/**********************
- * Functions
+/****************
+ ///* Functions
  
 
 function calculateAge(birthYear) {
@@ -348,10 +348,9 @@ yearsUnstilRetirement(1990, 'John');
 yearsUnstilRetirement(1948, 'Mike');
 yearsUnstilRetirement(1969, 'Jane');
 
-*/
 
-/*************************
- * Function Statements and Expressions
+
+///// * Function Statements and Expressions
  
 
 // Fuction declaration
@@ -412,6 +411,79 @@ console.log(john.indexOf(1990));
 var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer';
 console.log(isDesigner);
 */
+
+/***************
+ * Coding Challenge 2
+ 
+//moje reseni
+
+var billFirst = 124;
+var billSecond = 48;
+var billThird = 268;
+
+function tip(bill){
+if (bill < 50){
+    return bill * 0.2;
+} else if (bill >= 50 && bill <= 200){
+    return bill * 0.15;
+} else { 
+    return bill * 0.1
+}
+}
+
+var tipFirst = tip(billFirst);
+var tipSecond = tip(billSecond);
+var tipThird = tip(billThird);
+
+console.log('First tip is: ' + tipFirst + '; ' + 'Second tip is: ' + tipSecond + '; ' + 'Third tip is: ' + tipThird + '; ')
+
+var tipFirstt = tip(billFirst) + billFirst;
+var tipSecondd = tip(billSecond) + billSecond;
+var tipThirdd = tip(billThird) + billThird;
+
+console.log('First payment is: ' + tipFirstt + '; ' + 'Second payment is: ' + tipSecondd + '; ' + 'Third payment is: ' + tipThirdd + '; ')
+
+
+// reseni toho zmrda zkurvenyho
+
+function tipCalculator(bill){
+    var percentage;
+    if (bill < 50){
+        percentage = .2;
+    } else if (bill >= 50 && bill < 200){
+        percentage = .15;
+    } else {
+        percentage = .1;
+    }
+    return percentage * bill;
+}
+
+var bills = [124, 48, 268];
+var tips =  [tipCalculator(bills[0]),
+            tipCalculator(bills[1]),
+            tipCalculator(bills[2])];
+
+var finalValues =   [bills[0] + tips[0],
+                    bills[1] + tips[1],
+                    bills[2] + tips[2]]
+
+console.log(tips, finalValues);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

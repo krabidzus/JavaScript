@@ -471,15 +471,154 @@ console.log(tips, finalValues);
 
 */
 
+/*****************
+ * Objects and properties
+ 
+
+ // Object literatl
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false
+};
+console.log(john.firstName);
+console.log(john['lastName']);
+var x = 'birthYear';
+console.log(john[x]);
+
+john.job = 'designer';
+john['isMarried'] = true;
+console.log(john);
+
+// new Object syntax
+var jane = new Object();
+jane.firstName = 'Jane';
+jane.birthYear = 1969;
+jane['lastName'] = 'Smith';
+console.log(jane);
+*/
+
+/*****************
+ * Objects and methods
+ 
+
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1992,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false,
+    calcAge: function(){
+        this.age = 2018 - this.birthYear;
+    }
+};
+
+john.calcAge();
+console.log(john);
+
+*/
+
+/****************
+ * CODING CHALLENGE 4
+ 
+var john = {
+    firstName: "John",
+    lastName: "New",
+    mass: 70,
+    height: 1.8,
+    calcBMI: function(){
+        this.BMI = this.mass / (this.height * this.height);
+    }
+};
+
+john.calcBMI();
+console.log('John\'s BMI is: ' + john.BMI);
+
+var mark = {
+    firstName: "Mark",
+    lastName: "Thornthon",
+    mass: 90,
+    height: 1.75,
+    calcBMI: function(){
+        this.BMI = this.mass / (this.height * this.height);
+    }
+};
+
+mark.calcBMI();
+console.log('Mark\'s BMI is: ' + mark.BMI);
+
+switch (true){
+    case mark.BMI > john.BMI:
+        console.log('Mark\'s BMI is bigger: ' +mark.BMI);
+        break;
+    case john.BMI > mark.BMI:
+        console.log('John\'s BMI is bigger: ' +john.BMI);
+        break;
+    case john.BMI === mark.BMI:
+        console.log('BMI split: ' +john.BMI);
+        break;
+}
+
+*/
+
+/**********************
+ * Loops and iteration
+ 
+
+for (var i = 0; i < 10; i++){
+    console.log(i);
+}
+
+// po dvou
+
+for (var i = 0; i < 10; i += 2){
+    console.log(i);
+}
 
 
 
+var john = ['John', 'Smith', 1990, 'designer', false, 'blue']
+
+for (var i = 0; i < john.length; i++) {
+    console.log(john[i]);
+}
+
+// While loop
+var i = 0;
+while(i < john.length) {
+    console.log(john[i]);
+    i++;
+}
 
 
+// continue and break statements
+
+var john = ['John', 'Smith', 1990, 'designer', false, 'blue']
+
+for (var i = 0; i < john.length; i++) {
+    if (typeof john[i] !== 'string') continue; 
+    console.log(john[i]);
+};
 
 
+for (var i = 0; i < john.length; i++) {
+    if (typeof john[i] !== 'string') break; 
+   console.log(john[i]);
+};
 
+// looping backwards
+for (var i = john.length - 1; i >= 0; i--) {
+    console.log(john[i]);
+}
+*/
 
+/*****************
+ * CODING CHALLENGE 5
+ */
 
 
 

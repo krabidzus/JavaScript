@@ -618,7 +618,8 @@ for (var i = john.length - 1; i >= 0; i--) {
 
 /*****************
  * CODING CHALLENGE 5
- */
+ * nevyresil jsem - nastudovat
+ 
 
 
  var john ={
@@ -704,7 +705,7 @@ if (john.average > mark.average) {
     console.log(mark.fullName + '\'s family pays higher tips, with an average of $' + mark.average);
 }
 
-
+*/
 
 
 
